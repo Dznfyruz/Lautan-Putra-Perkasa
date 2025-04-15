@@ -1,0 +1,251 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --font: #00ADB5;
+    --font1: #393E46;
+    --bg1: #EEEEEE;
+    --bg2: #222831;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.header {
+    width: 100%;
+    height: 100px;
+    background-color: var(--bg2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.header2 button {
+    background-color: #121613;
+    border-radius: 30px;
+    height: 30px;
+    width: 100px;
+}
+    
+.header1 {
+    display: flex;
+    align-items: center;
+}
+
+.header1 .logo {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.header1 h1 {
+    color: var(--font);
+    font-size: 25px;
+    font-weight: 600;
+}
+.header2 button
+
+
+.bungkus {
+    display: flex;
+    flex-direction: column;
+}
+
+.bungkus p {
+    color: var(--font);
+    font-size: 14px;
+}
+
+.header2 ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.header2 ul li a {
+    text-decoration: none;
+    color: var(--font);
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.5s ease;
+}
+
+.header2 ul li a:hover {
+    font-weight: 700;
+}
+
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 120px 20px;
+}
+
+.isiabout {
+    display: flex;
+    max-width: 1100px;
+    gap: 40px;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.satu, .dua {
+    flex: 1;
+}
+
+h1 {
+    color: #005f73;
+    font-size: 26px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+footer {
+    width: 100%;
+    background-color: var(--bg2);
+    color: white;
+    margin-top: 30px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.kiri, .kanan {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+}
+
+.kiri h1 {
+    color: var(--font);
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.kiri iframe {
+    width: 100%;
+    height: 170px;
+    border-radius: 10px;
+}
+
+.atas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.isi1 {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.isi1 h3 {
+    color: var(--font);
+    font-size: 18px;
+}
+
+.isi1 a, .isi1 p {
+    text-decoration: none;
+    color: var(--font);
+    font-size: 16px;
+}
+.bawah {
+    text-align: left;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.bawah p {
+    margin-bottom: 10px;
+}
+
+.icon-instagram i {
+    font-size: 24px; /* Ukuran ikon */
+    color: #E1306C; /* Warna merah muda Instagram */
+    transition: color 0.3s; /* Efek transisi saat hover */
+}
+
+.icon-instagram:hover i {
+    color: #C13584; /* Warna ungu saat hover */
+}
+
+.icon-whatsapp i {
+    font-size: 24px; /* Ukuran ikon */
+    color: #25D366; /* Warna hijau WhatsApp */
+    transition: color 0.3s; /* Efek transisi saat hover */
+}
+
+.icon-whatsapp:hover i {
+    color: #128C7E; /* Warna hijau gelap saat hover */
+}
+
+
+@media (max-width: 1024px) {
+    .header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .header1, .header2 {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .header2 ul {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .isiabout {
+        flex-direction: column;
+    }
+    
+    .header {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .header1, .header2 {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .header2 ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .barang {
+        grid-template-columns: 1fr;
+    }
+    
+    .atas {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+}
