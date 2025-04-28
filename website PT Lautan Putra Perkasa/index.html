@@ -5,27 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Material Handling - Solusi Konstruksi dan Pertambangan PT Lautan Putra Perkasa</title>
     <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
 
-    <!-- Header -->
-    <header class="header">
-        <div class="header1">
-            <img src="img/logoperusahan.png" alt="" class="logo">
-            <div class="bungkus">
-                <h1>PT lautan putra perkasa</h1>
-                <p>Material Handling & Industrial Equipment</p>
-            </div>
+    <!--header-->
+        <header>
+            <nav>
+                <ul class="nav-bar">
+                    <li class="logo"><a href="index.html"><img src="./img/logoperusahan.png" alt=""><span class="lpp">LPP &nbsp</span> Lautan Putra Perkasa</a></li>
+                    <input type="checkbox" id="check">
+                    <span class="menu"> 
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="product.html">Product Forklift</a></li>
+                        <li><a href="sparepart.html">Sparepart Truck</a></li>
+                        <label for="check" class="close-menu"><i class="fa-solid fa-xmark"></i></label>
+                    </span>
+                    <label for="check" class="open-menu"><i class="fa-solid fa-bars"></i></label>
 
-        </div>
-        <div class="header2">
-            <ul>
-                <button><li><a href="index.html">Home</a></li></button>
-                <button><li><a href="about.html">About</a></li></button>
-                <button><li><a href="product.html">Product</a></button>
-            </ul>
-        </div>
-    </header>
+                </ul>
+            </nav>
+        </header>
 
     <!-- Section Tentang Kami -->
     <section class="about">
@@ -37,11 +39,38 @@
         </div>
     </section>
 
+    <div class="collaborator"> 
+        <h1>Companies That once We Supply</h1>
+    </div>
+    
+    <div class="logos">
+        <div class="logos-slide">
+            <img src="/logoslide/garuda indonesia-Photoroom.png" alt="">
+            <img src="/logoslide/sharp-Photoroom.png" alt="">
+            <img src="/logoslide/panca budi-Photoroom.png" alt="">
+            <img src="/logoslide/oppo-Photoroom.png" alt="">
+            <img src="/logoslide/nissin-Photoroom.png" alt="">
+            <img src="/logoslide/nifco-Photoroom.png" alt="">
+            <img src="/logoslide/Logo UNIFAM.png" alt="">
+            <img src="/logoslide/Logo ADR.png" alt="">
+        </div>
+        <div class="logos-slide">
+            <img src="/logoslide/garuda indonesia-Photoroom.png" alt="">
+            <img src="/logoslide/sharp-Photoroom.png" alt="">
+            <img src="/logoslide/panca budi-Photoroom.png" alt="">
+            <img src="/logoslide/oppo-Photoroom.png" alt="">
+            <img src="/logoslide/nissin-Photoroom.png" alt="">
+            <img src="/logoslide/nifco-Photoroom.png" alt="">
+            <img src="/logoslide/Logo UNIFAM.png" alt="">
+            <img src="/logoslide/Logo ADR.png" alt="">
+        </div>
+    </div> 
+
     <!-- Section Produk -->
     <section id="products" class="products">
         <div class="container">
             <div class="judul">
-                <h2>Jenis Produk Material Handling</h2>
+                <h2>Jenis Produk Pilihan Kami</h2>
             </div>
             <div class="barang">
                 <div class="product-item">
@@ -123,7 +152,7 @@
                 <div class="isi1">
                     <h3>Collaboration</h3>
                     <p><a href="#">Sharp</a></p>
-                    <p><a href="#">Oppo</a>.</p>
+                    <p><a href="#">Oppo</a></p>
                     <p><a href="#">Garuda Indonesia</a></p>  
                     <p><a href="#">Uniform</a></p>
                     <p><a href="#">lainnya</a></p>
@@ -205,6 +234,7 @@
             popup.style.display = 'none';
           }
         });
+
       </script>
       
 </body>

@@ -9,26 +9,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="about.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
 </head>
 <body>
+        <!--header-->
+        <header>
+            <nav>
+                <ul class="nav-bar">
+                    <li class="logo"><a href="index.html"><img src="./img/logoperusahan.png" alt=""><span class="lpp">LPP &nbsp</span> Lautan Putra Perkasa</a></li>
+                    <input type="checkbox" id="check">
+                    <span class="menu"> 
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="product.html">Product Forklift</a></li>
+                        <li><a href="sparepart.html">Sparepart Truck</a></li>
+                        <label for="check" class="close-menu"><i class="fa-solid fa-xmark"></i></label>
+                    </span>
+                    <label for="check" class="open-menu"><i class="fa-solid fa-bars"></i></label>
 
-    <header class="header">
-        <div class="header1">
-            <img src="img/logoperusahan.png" alt="" class="logo">
-            <div class="bungkus">
-                <h1>PT lautan putra perkasa</h1>
-                <p>Material Handling & Industrial Equipment</p>
-            </div>
-
-        </div>
-        <div class="header2">
-            <ul>
-                <button><li><a href="index.html">Home</a></li></button>
-                <button><li><a href="about.html">About</a></li></button>
-                <button><li><a href="product.html">Product</a></button>
-            </ul>
-        </div>
-    </header>
+                </ul>
+            </nav>
+        </header>
 
     <!-- About Section -->
     <section class="about">
@@ -42,21 +44,21 @@
                     <br><br>
                     Kami menyediakan berbagai produk berkualitas tinggi seperti:
                     <ul>
-                        <li>Manual Stacker</li>
-                        <li>Lift Table</li>
-                        <li>Stacker Hand Drum Lift</li>
-                        <li>Hand Pallet</li>
-                        <li>Full Electric Stacker</li>
-                        <li>Semi Electric Stacker</li>
-                        <li>Electric Forklift/Reach Truck</li>
-                        <li>Forklift Diesel</li>
+                        <li><b>Manual Stacker</b></li>
+                        <li><b>Lift Table</b></li>
+                        <li><b>Stacker Hand Drum Lift</b></li>
+                        <li><b>Hand Pallet</b></li>
+                        <li><b>Full Electric Stacker</b></li>
+                        <li><b>Semi Electric Stacker</b></li>
+                        <li><b>Electric Forklift/Reach Truck</b></li>
+                        <li><b>Forklift Diesel</b></li>
                     </ul>
                     <br>
                     Harga yang kami tawarkan sangat kompetitif dengan kualitas terbaik di kelasnya.
                     <br><br>
                     <strong> Siap Kirim Ke Berbagai Wilayah</strong> Jabodetabek(Jakarta,Bogor,Depok,Tangerang,Bekasi) dan berbagai daerah lainnya.
                     <br><br>
-                    <strong>Segera hubungi kami </strong> untuk bisa mendapatkan penawaran lebih menarik!
+                    <strong>Segera hubungi kami untuk bisa mendapatkan penawaran lebih menarik!</strong>
                 </p>
             </div>
             
@@ -88,7 +90,7 @@
                 <div class="isi1">
                     <h3>Collaboration</h3>
                     <p><a href="#">Sharp</a></p>
-                    <p><a href="#">Oppo</a>.</p>
+                    <p><a href="#">Oppo</a></p>
                     <p><a href="#">Garuda Indonesia</a></p>  
                     <p><a href="#">Uniform</a></p>
                     <p><a href="#">lainnya</a></p>
@@ -119,6 +121,17 @@
             </div>
         </div>
     </footer>
-
+    <script>
+            const body = document.querySelector("body"),
+            sidebar = body.querySelector(".sidebar"),
+            toggle = body.querySelector(".toggle"),
+            searchBtn = body.querySelector(".search-box"),
+            modeSwitch = body.querySelector(".toggle-switch"),
+            modeText = body.querySelector(".mode-text");
+    
+        toggle.addEventListener("click", () => {
+            sidebar.classList.toggle("close");
+        });
+    </script>
 </body>
 </html>
